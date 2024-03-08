@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>架空 | 架空のうなぎ屋</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hilosiva/OlayoutCSS@v1.0.4/cdn/olayout.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="siteName">
+        <a href="./">
+          <img src="assets/img/logo.svg" alt="架空" width="51" height="138" decoding="async" />
+        </a>
+      </h1>
+      <nav class="globalNav" aria-label="サイトメニュー" data-grid data-place="+center">
+        <ol data-flex="col" data-gap="2">
+          <li>
+            <a href="#挨拶">01 - Greet <strong>ご挨拶</strong></a>
+          </li>
+          <li>
+            <a href="#こだわり">02 - Pride <strong>こだわり</strong></a>
+          </li>
+          <li>
+            <a href="#お品書き">03 - Menu <strong>お品書き</strong></a>
+          </li>
+          <li>
+            <a href="#お品書き">04 - Accece <strong>アクセス</strong></a>
+          </li>
+        </ol>
+        <p class="cta" data-grid data-place="+center"><a href="#">ご予約</a></p>
+      </nav>
+    </header>
+    <main>
+      <div class="background">
+        <div data-max-width="small" data-m="x-auto">
+          <figure class="videoWrap">
+            <video src="assets/movie/movie.mp4" width="460" autoplay muted playsinline loop>
+              <track kind="captions" srclang="ja" src="assets/vtt/caption.vtt" label="クローズドキャプション" />
+            </video>
+          </figure>
+        </div>
+      </div>
+      <div class="controls" data-max-width="small" data-m="x-auto">
+        <ul data-flex="inline" data-place="center middle" data-gap="3" data-p="1">
+          <li>
+            <button type="button" class="js-pause"><span class="material-symbols-outlined" aria-hidden="true">pause_circle</span><span data-visually-hidden>一時停止</span></button>
+          </li>
+
+          <li>
+            <button type="button" class="js-caption">
+              <span class="material-symbols-outlined" aria-hidden="true">closed_caption</span>
+              <span data-visually-hidden>クローズドキャプション</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="front">
+        <div data-max-width="small" data-m="x-auto">
+          <div class="hero" data-grid data-place="+center">
+            <p>俺のうなぎは美味い。</p>
+          </div>
+          <section id="挨拶">
+            <div data-p="3">
+              <h2>ご挨拶</h2>
+              <div data-m="t-1" data-space="y-3">
+                <p>私たちは、架空の鰻料理の専門店です。架空のお店だからこそ、どんなお料理も最高級な食材をお安く提供することができます。</p>
+              </div>
+            </div>
+          </section>
+          <section id="こだわり">
+            <div data-p="3">
+              <h2>こだわり</h2>
+              <div data-m="t-1" data-space="y-3">
+                <p>天然のうなぎのみを利用した贅沢な一品。鰻重ではなく、あえて白い器に盛ることで少しでも安っぽく見せようという職人のこだわり。タレは継ぎ足しで薄めすぎたサラッとした秘伝のタレ。</p>
+                <figure>
+                  <img src="assets/img/photo1.jpg" alt="ふっくら焼き上がったうなぎ" width="640" height="427" />
+                </figure>
+                <p>天然のうなぎのみを利用した贅沢な一品。鰻重ではなく、あえて白い器に盛ることで少しでも安っぽく見せようという職人のこだわり。タレは継ぎ足しで薄めすぎたサラッとした秘伝のタレ。</p>
+              </div>
+            </div>
+          </section>
+          <section id="お品書き">
+            <div data-p="3">
+              <h2>お品書き</h2>
+              <div data-m="t-2" data-space="y-3">
+                <h3>鰻重</h3>
+                <figure>
+                  <img src="assets/img/photo2.jpg" alt="ご飯でしっかりとかさ増しした上に焼き上がったうなぎがそっと乗せてある" width="640" height="427" />
+                </figure>
+                <p>天然うなぎを使った贅沢な鰻重。</p>
+                <p data-text="right">¥10,000 <small>(税込)</small></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div data-flex data-place="between last">
+        <address>
+          <p>〒XXX-XXXX<br />架空県架空市架空1-1-1 コーポ架空 201号</p>
+          <p><a href="#">0X-XXXX-XXXX</a></p>
+        </address>
+        <p><small>©︎ 2024 kaku-.</small></p>
+      </div>
+    </footer>
+  </body>
+</html>
